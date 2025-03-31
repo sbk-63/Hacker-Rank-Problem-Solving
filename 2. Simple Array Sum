@@ -5,3 +5,8 @@
         }
         return count;
     }
+
+// using lambda expressions
+public static int simpleArraySum(List<Integer> ar) {
+    return ar.stream().reduce(0, (a,b)-> a+b);
+}
