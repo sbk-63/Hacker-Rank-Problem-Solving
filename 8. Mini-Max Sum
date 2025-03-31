@@ -8,3 +8,13 @@
         System.out.print(sum - max + " ");
         System.out.println(sum - min);
     }
+
+
+// using lambda funcion
+public static void miniMaxSum(List<Integer> arr) {
+        long sum = arr.stream().mapToLong(Integer::longValue).sum();
+        int max = Collections.max(arr);
+        int min = Collections.min(arr);
+        System.out.print(sum - max + " ");
+        System.out.println(sum - min);
+    }
