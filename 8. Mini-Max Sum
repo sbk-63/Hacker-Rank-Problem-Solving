@@ -10,7 +10,7 @@
     }
 
 
-// using lambda funcion
+// using lambda expressions
 public static void miniMaxSum(List<Integer> arr) {
         long sum = arr.stream().mapToLong(Integer::longValue).sum();
         int max = Collections.max(arr);
